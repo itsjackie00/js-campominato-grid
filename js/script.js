@@ -22,3 +22,20 @@ boxWrapper.className = 'd-flex justify-content-center align-content-center m-aut
 boxWrapper.setAttribute('id', 'boxes');
 console.log(boxWrapper);
 
+//VARIABILI
+
+let elBtn = document.querySelector('.btn.btn-outline-dark');
+// console.log(elBtn);
+
+let numBox = 100;
+console.log(numBox);
+
+let tmpHtml = '';
+
+/* Button function */
+elBtn.addEventListener('click', function() {
+    let box = document.getElementById('box');
+    console.log(box);
+    
+
+})
