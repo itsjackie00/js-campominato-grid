@@ -13,3 +13,12 @@
     <div class="box"></div>
 </div> 
 */
+
+//WRAPPER
+const boxWrapper = document.createElement('div');
+console.log(boxWrapper);
+
+boxWrapper.className = 'd-flex justify-content-center align-content-center m-auto flex-wrap';
+boxWrapper.setAttribute('id', 'boxes');
+console.log(boxWrapper);
+
