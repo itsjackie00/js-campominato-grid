@@ -1,9 +1,20 @@
 /* my utilities */
-.jw-debug{
+.jw-debug {
     border: 1px solid blue;
 }
 
 /* GENERAL */
-body{
+body {
     font-family: "Roboto Serif", serif;
+}
+
+#boxes {
+    width: 1000px;
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    border: 2px solid black;
+    margin: 5px;
 }
