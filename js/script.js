@@ -36,7 +36,7 @@ console.log(numBox);
 
 /* Button function */
 elBtn.addEventListener('click', function () {
-
+    boxWrapper.innerHTML = '';
     for (let i = 0; i < numBox; i++) {
 
         const square = document.createElement('div');
