@@ -19,7 +19,7 @@ const boxWrapper = document.createElement('div');
 console.log(boxWrapper);
 
 boxWrapper.className = 'd-flex justify-content-center align-content-center m-auto flex-wrap';
-boxWrapper.setAttribute('id', 'boxes');
+boxWrapper.setAttribute('id', 'box');
 console.log(boxWrapper);
 
 //VARIABILI
@@ -27,15 +27,33 @@ console.log(boxWrapper);
 let elBtn = document.querySelector('.btn.btn-outline-dark');
 // console.log(elBtn);
 
+// let boxes = document.getElementById('box');
+// console.log(boxes);
+
 let numBox = 100;
 console.log(numBox);
 
-let tmpHtml = '';
 
 /* Button function */
-elBtn.addEventListener('click', function() {
-    let box = document.getElementById('box');
-    console.log(box);
-    
+elBtn.addEventListener('click', function () {
+
+    for (let i = 0; i < numBox; i++) {
+
+        const square = document.createElement('div');
+        square.className = `box fs-4 justify-content-center d-flex align-items-center`;
+        square.innerHTML = `${i + 1}`;
+
+        square.addEventListener('click', function () {
+            square.classList.add('clicked');
+        })
+
+        boxWrapper.appendChild(square);
+
+    }
+
+    document.getElementById('game').append(boxWrapper);
 
 })
+const container = document.querySelector('.container');
+container.append(boxWrapper);
+
